@@ -30,3 +30,20 @@ if(passwordChecker){
 
 var passwordLength = passWord.length;
 console.log (passwordLength);
+
+var passwordCount = passwordLength <= 20 ;
+console.log(passwordCount);
+
+if(passwordCount){
+    console.log("password approved");
+}else{
+    console.log("password failed");
+}
+
+var passwordMinimum = passwordLength >= 5 ;
+
+if(passwordMinimum){
+    console.log("password approved");
+}else{
+    console.log("password failed");
+}
