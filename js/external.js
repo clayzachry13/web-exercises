@@ -18,6 +18,7 @@ alert("facebook pay $" +facebookHours * facebookPay);
 
 var userName = 'codeing';
 var passWord = 'notastrongpassword';
+console.log(passWord);
 
 var passwordChecker = ( userName == passWord );
 console.log(passwordChecker);
@@ -47,3 +48,7 @@ if(passwordMinimum){
 }else{
     console.log("password failed");
 }
+
+var whiteSpace =  (passWord.trim());
+console.log(whiteSpace);
+
