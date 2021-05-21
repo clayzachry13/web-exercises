@@ -4,3 +4,18 @@ function shout(message) {
 
 var returnValue = shout("hello there");
 console.log(returnValue);
+
+var askQuestion = prompt("type what to shout");
+
+function shouting(x) {
+    alert(x + "!!!!");
+
+}
+
+shouting(askQuestion);
+
+function welcomeMe() {
+    alert("hi!");
+}
+
+welcomeMe("green");
