@@ -19,3 +19,12 @@ function welcomeMe() {
 }
 
 welcomeMe("green");
+
+var global = "the world is big";
+
+function talk() {
+    alert(global);
+    
+}
+
+talk();
