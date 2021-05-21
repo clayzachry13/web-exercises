@@ -1,3 +1,6 @@
+var fyi = "error for testing/learning reasons";
+alert(fyi);
+
 function shout(message) {
     alert(message.toUpperCase() + "!!!")
 }
@@ -28,3 +31,12 @@ function talk() {
 }
 
 talk();
+
+function local() {
+    var localvar = "this is local!";
+    alert(localvar);
+    alert(global);    
+}
+
+local();
+alert(localvar); //error known and for learning how local variables work within a function.
