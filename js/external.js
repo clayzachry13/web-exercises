@@ -16,12 +16,12 @@ alert("google pay $" + googlePay * googleHours);
 alert("amazon pay $" +amazonHours * amazonPay);
 alert("facebook pay $" +facebookHours * facebookPay);
 
-var userName = 'codeing';
-var passWord = 'notastrongpassword';
+var username = 'codeing';
+var password = 'notastrongpassword';
 console.log(passWord);
 
-var passwordChecker = ( userName == passWord );
-console.log(passwordChecker);
+var passwordChecker = username == password;
+console.log("passwordchecker: " + passwordChecker);
 
 if(passwordChecker){
     console.log("password failed");
@@ -29,8 +29,8 @@ if(passwordChecker){
     console.log("password approved");
 }
 
-var passwordLength = passWord.length;
-console.log (passwordLength);
+var passwordLength = password.length <=20;
+console.log (" passwordLength" + passwordLength);
 
 var passwordCount = passwordLength <= 20 ;
 console.log(passwordCount);
@@ -49,6 +49,6 @@ if(passwordMinimum){
     console.log("password failed");
 }
 
-var whiteSpace =  (passWord.trim());
+var whiteSpace =  (password.trim());
 console.log(whiteSpace);
 
