@@ -1,4 +1,4 @@
-
+"use strict";
 // javascript function that searches for a matching result to alert the user
 // with a prepared response through if and else statements.
 function colorChecker(x) {
@@ -67,7 +67,7 @@ function discount(x) {
         return 25;
     }else if(x == 3){
         return 35;
-    }else if (x == 3){
+    }else if (x == 4){
         return 50;
     }else if(x == 5) {
         return 100;
@@ -99,7 +99,27 @@ function discountTotal(x,y) {
     
 }
 
-var big = discountTotal(test , price);
-console.log(big);
+var finalPrice = discountTotal(test , price);
+console.log(finalPrice);
 
-alert("your new bill is " + ( price - big));
+alert("your new bill is " + ( price - finalPrice));
+
+
+
+
+
+// TODO:
+//  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
+//  * would like to enter a number. If they click 'Ok', prompt the user for a
+//  * number, then use 3 separate alerts to tell the user:
+//  *
+//  * - whether the number is even or odd
+//  * - what the number plus 100 is
+//  * - if the number is negative or positive
+//  *
+//  * if what the user enters is not a number, use an alert to tell them that, and
+//  * do *not* display any of the above information.
+//  *
+//  * Can you refactor your code to use functions?
+
+var confirm = confirm("would you like to enter a number?");
