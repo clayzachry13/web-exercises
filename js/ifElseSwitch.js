@@ -48,19 +48,51 @@ if(userinput === true){
 
 //if(userNumber ==  )
 
-
-var numbers = [1 , 2  , 3 , 4 , 5 ];
-var randomNumbers = numbers[Math.floor(Math.random() * numbers.length)];
-var bill = prompt("what is your bill total?");
-function discount(x,bill) {
-    x * 100 / 100 - bill
+var price = prompt("what is your bill total");
+var luckyNumber = Math.floor(Math.random() * 6);
+console.log(luckyNumber);
+alert("your luck number is " + luckyNumber);
+function discount(x) {
+    
+    if (x == 0 ) {
+        return 0;
+        
+    }else if(x == 1){
+        return 10;
+    }else if (x == 2){
+        return 25;
+    }else if(x == 3){
+        return 35;
+    }else if (x == 3){
+        return 50;
+    }else if(x == 5) {
+        return 100;
+    }
     
 }
 
-console.log(discount);
+var test = discount(luckyNumber);
+console.log(test);
+console.log(typeof test);
 
-discount(15)
+function discountTotal(x,y) {
 
-.console.log(discount);
+    if (x == 0) {
+        return x * 100 / 100 - y;
+        
+    } else if (x == 10) {
+        return x * 100 / 100 - y;
+        
+    }else if (x == 25){
+        return x * 100 / 100 - y;
+    }else if(x == 35){
+        return x * 100 / 100 - y;
+    }else if(x == 50){
+        return x * 100 / 100 - y;
+    }else if(x == 100){
+        return x * 100 / 100 - y;
+    }
+    
+}
 
-var billTotal = discount;
+var big = discountTotal(test);
