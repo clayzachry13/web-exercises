@@ -78,21 +78,24 @@ console.log(typeof test);
 function discountTotal(x,y) {
 
     if (x == 0) {
-        return x * 100 / 100 - y;
+        return x * 100 / 100 ;
         
     } else if (x == 10) {
-        return x * 100 / 100 - y;
+        return x * y / 100 ;
         
     }else if (x == 25){
-        return x * 100 / 100 - y;
+        return x * y / 100 ;
     }else if(x == 35){
-        return x * 100 / 100 - y;
+        return x * y / 100 ;
     }else if(x == 50){
-        return x * 100 / 100 - y;
+        return x * y / 100 ;
     }else if(x == 100){
-        return x * 100 / 100 - y;
+        return x * y / 100 ;
     }
     
 }
 
-var big = discountTotal(test);
+var big = discountTotal(test , price);
+console.log(big);
+
+alert("your new bill is " + ( price - big));
