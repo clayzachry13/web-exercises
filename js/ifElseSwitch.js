@@ -46,7 +46,11 @@ if(userinput === true){
 
 
 
-//if(userNumber ==  )
+//if(userNumber ==  ) 
+
+// creates a lucky number then based on that lucky number you will be
+//given a discount which is applied to the bill that is gotten by a prompt
+
 
 var price = prompt("what is your bill total");
 var luckyNumber = Math.floor(Math.random() * 6);
