@@ -122,4 +122,32 @@ alert("your new bill is " + ( price - finalPrice));
 //  *
 //  * Can you refactor your code to use functions?
 
-var confirm = confirm("would you like to enter a number?");
+var confirming = confirm("would you like to enter a number?");
+
+if(confirming == true){
+  var useNum = parseInt (prompt("what number?"));
+  console.log(typeof useNum);
+}else if(confirming == false){
+    alert("ahhh that is too bad!");
+}
+
+function plus100(x) {
+    return x + 100;
+    
+}
+
+alert("your new number is " + plus100( useNum));
+
+if(useNum % 2 == 0){
+    alert("your number is even");
+}else{
+    alert("your number is odd");
+}
+
+if (useNum > 0) {
+    alert("your number is postive");
+    
+}else{
+    alert("your number is negative");
+}
+
