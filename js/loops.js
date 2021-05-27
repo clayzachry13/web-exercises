@@ -37,3 +37,10 @@ function getRandomInt(min, max) {
 // created a loop that consol.logs a number like 1 then logs 1
 // if number is two it logs 22, if number 3 it logs 333  
 
+for(var t = 1; t < 10; t++){
+    var redovar = "";
+    for(var g = 1; g <= t; g++){
+    redovar = redovar + t;
+}
+    console.log(redovar);
+}
