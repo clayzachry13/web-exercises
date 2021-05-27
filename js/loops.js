@@ -9,12 +9,30 @@ function multi(x) {
     
 }
 
+multi(3)
+
 
 
 
 // built a for loop to generate 10 random numbers between 20 and 200
 //check outputs if they  are even or odd.
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+  }
 
+  
+
+  for (var j = 0; j <= 10; j++){
+    var numb = getRandomInt(20, 200);
+      if (numb % 2 === 0) {
+          console.log(numb + "even");
+          
+      }else{
+          console.log(numb + "odd");
+      }
+  }
 
 // created a loop that consol.logs a number like 1 then logs 1
 // if number is two it logs 22, if number 3 it logs 333  
