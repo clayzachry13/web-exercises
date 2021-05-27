@@ -35,8 +35,23 @@ for(var b = 1; b <= 10; b++){
 // created a loop that consol.logs a number like 1 then logs 1
 // if number is two it logs 22, if number 3 it logs 333 ect
 
+for(var k = 1; k < 10; k++){
+    var output = "";
+    for(var z = 1; z <= k; z++){
+     output = output + k;
+     
+    }
+    console.log(output);
+}
 
-
+for(var b = 1; b < 10; b++) {
+    var output = '';
+    for (var j = 1; j<=b; j++) {
+        output = output + b;
+        // output+=b;
+    }
+    console.log(output);
+}
 
 
 // built a function that removes 5 from the starting number
