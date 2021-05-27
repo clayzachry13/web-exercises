@@ -44,17 +44,12 @@ for(var k = 1; k < 10; k++){
     console.log(output);
 }
 
-for(var b = 1; b < 10; b++) {
-    var output = '';
-    for (var j = 1; j<=b; j++) {
-        output = output + b;
-        // output+=b;
-    }
-    console.log(output);
-}
+
 
 
 // built a function that removes 5 from the starting number
 // using a console log in a loop
 
-
+for(var p = 100; p >= 5; p=p-5){
+    console.log(p);
+}
