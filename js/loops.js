@@ -44,3 +44,10 @@ for(var t = 1; t < 10; t++){
 }
     console.log(redovar);
 }
+
+// built a for loop that removes 5 from the number that is added.
+// used console.log to show results.
+
+for(var w = 100; w >= 5; w = w - 5){
+    console.log(w);
+}
