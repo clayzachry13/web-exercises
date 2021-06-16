@@ -40,3 +40,5 @@ function local() {
 
 local();
 alert(localvar); //error known and for learning how local variables work within a function.
+
+// this is a test //
